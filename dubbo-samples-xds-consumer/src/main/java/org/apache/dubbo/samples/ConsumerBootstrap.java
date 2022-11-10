@@ -37,7 +37,7 @@ public class ConsumerBootstrap {
             try {
                 String hello = greetingServiceConsumer.doSayHello("xDS Consumer");
                 System.out.println("result: " + hello);
-                Thread.sleep(100);
+                Thread.sleep(2000);
             } catch (Throwable t) {
                 t.printStackTrace();
             }
