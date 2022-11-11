@@ -30,7 +30,8 @@ spec:
     spec:
       containers:
         - name: server
-          image: apache/dubbo-demo:dubbo-samples-xds-provider_0.0.1
+          image: registry.cn-shanghai.aliyuncs.com/pluto/dubbo-samples-xds-provider:latest
+          imagePullPolicy: Always
           livenessProbe:
             httpGet:
               path: /live
@@ -49,3 +50,5 @@ spec:
               port: 22222
             failureThreshold: 30
             periodSeconds: 10
+      imagePullSecrets:
+        - name: regsecret
