@@ -79,6 +79,12 @@
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-xds</artifactId>
             <version>3.1.2-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>dubbo-registry-api</artifactId>
+                    <groupId>org.apache.dubbo</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
