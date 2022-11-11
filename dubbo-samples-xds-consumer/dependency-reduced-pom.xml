@@ -134,7 +134,7 @@
     </dependencies>
   </dependencyManagement>
   <properties>
-    <dubbo.version>3.1.0</dubbo.version>
+    <dubbo.version>3.1.99-SNAPSHOT</dubbo.version>
     <spring.version>4.3.16.RELEASE</spring.version>
     <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
     <source.level>1.8</source.level>
