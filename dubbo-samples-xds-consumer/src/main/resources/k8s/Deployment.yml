@@ -31,6 +31,7 @@ spec:
       containers:
         - name: server
           image: registry.cn-shanghai.aliyuncs.com/pluto/dubbo-samples-xds-consumer:latest
+#          image: registry.cn-shanghai.aliyuncs.com/pluto/dubbo-samples-xds-consumer:2022-11-12-01-48-37
           imagePullPolicy: Always
           command: ["java","-jar","-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=31000","/dubbo-samples-xds-consumer-1.0-SNAPSHOT.jar"]
           livenessProbe:
