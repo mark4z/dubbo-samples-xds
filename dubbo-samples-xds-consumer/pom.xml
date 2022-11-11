@@ -82,7 +82,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-registry-api</artifactId>
+            <artifactId>dubbo-registry</artifactId>
             <version>3.1.2-SNAPSHOT</version>
         </dependency>
 
