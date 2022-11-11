@@ -32,6 +32,7 @@ spec:
         - name: server
           image: registry.cn-shanghai.aliyuncs.com/pluto/dubbo-samples-xds-consumer:latest
           imagePullPolicy: Always
+          command: ["java","-jar","-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=31000","/dubbo-samples-xds-consumer-1.0-SNAPSHOT.jar"]
           livenessProbe:
             httpGet:
               path: /live
