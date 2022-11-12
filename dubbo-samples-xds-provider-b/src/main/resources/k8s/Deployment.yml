@@ -33,7 +33,7 @@ spec:
           image: registry.cn-shanghai.aliyuncs.com/pluto/dubbo-samples-xds-provider-b:latest
 #          image: registry.cn-shanghai.aliyuncs.com/pluto/dubbo-samples-xds-provider-b:2022-11-12-01-48-37
           imagePullPolicy: Always
-          command: ["java","-jar","-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=31000","/dubbo-samples-xds-provider-b-1.0-SNAPSHOT.jar"]
+          command: ["java","-jar","-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=31000","/dubbo-samples-xds-provider-1.0-SNAPSHOT.jar"]
           livenessProbe:
             httpGet:
               path: /live
