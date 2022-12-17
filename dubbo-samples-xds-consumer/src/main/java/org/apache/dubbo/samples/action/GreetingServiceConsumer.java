@@ -27,14 +27,14 @@ import org.springframework.stereotype.Component;
 @Component("annotatedConsumer")
 public class GreetingServiceConsumer {
 
-    @DubboReference(version = "1.0.0")
+    @DubboReference(version = "1.0.0", providedBy = "provider-0")
     private GreetingService greetingService;
 
-    @DubboReference(version = "1.0.0", providerNamespace = "dubbo-demo-b")
+    @DubboReference(version = "1.0.0", providerNamespace = "dubbo-demo-b", providedBy = "provider-0")
     private GreetingService greetingService2;
 
     public String doSayHello(String name) {
-       return greetingService.sayHello(name);
+        return greetingService.sayHello(name);
     }
 
     public String doSayHello2(String name) {
