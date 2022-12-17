@@ -1,2 +1,4 @@
-kubectl delete -f dubbo-samples-xds-consumer/src/main/resources/k8s/Deployment.yml
-kubectl apply -f dubbo-samples-xds-consumer/src/main/resources/k8s/Deployment.yml
+for i in {0..0} ; do
+    cat ./k8s/Deployment.yml | sed "s/APP-NAME/privoder-$i/g" | kubectl apply -f -
+done
+
