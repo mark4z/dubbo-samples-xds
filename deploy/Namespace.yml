@@ -17,3 +17,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: dubbo-demo
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dubbo-demo-bS
